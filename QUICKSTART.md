@@ -17,7 +17,7 @@
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/UniMedSeg.git
+git clone https://github.com/699zjl/UniMedSeg.git
 cd UniMedSeg
 ```
 

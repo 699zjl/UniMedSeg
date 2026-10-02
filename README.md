@@ -86,7 +86,7 @@ Evaluated on **16 medical image datasets** spanning **5 imaging modalities** (sa
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/UniMedSeg.git
+git clone https://github.com/699zjl/UniMedSeg.git
 cd UniMedSeg
 
 # Create virtual environment
