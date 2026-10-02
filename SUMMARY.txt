@@ -1,0 +1,119 @@
+================================================================================
+                    UniMedSeg - GitHub Upload Summary
+================================================================================
+
+PROJECT INFORMATION
+-------------------
+Name:           UniMedSeg
+Full Title:     Unified Multi-Modal Medical Image Segmentation via 
+                Uncertainty-Guided Encoding and Frequency-Spatial 
+                Dual-Prompt Decoding
+
+Authors:        Jingling Zhang, Shuting Zheng, Xiangfei Liu, 
+                Wen Zhang, Jia Gu (Corresponding)
+
+Base Framework: MedCLIPSeg (CVPR 2026)
+Repository:     Ready for GitHub upload
+
+PROJECT LOCATION
+----------------
+Local Path:     /root/shared-nvme/code/OneModel_Upload/
+Size:           ~4.6 MB (124 files)
+Main Files:     model_unified.py, train.py, config_unified.yaml
+
+KEY INNOVATIONS
+---------------
+1. Modality-Aware Encoding
+   - Learnable embeddings for 5 imaging modalities
+   - Better cross-modal knowledge transfer
+
+2. Cross-Scale Uncertainty Propagation
+   - Multi-layer uncertainty extraction
+   - Memory bank for uncertainty aggregation
+
+3. Frequency-Spatial Decomposition Decoder
+   - Separate low-freq (structure) and high-freq (details) processing
+   - Dual-prompt cross-modal attention
+
+4. Boundary-Aware Contrastive Learning
+   - Specialized loss for boundary regions
+   - Improved boundary delineation
+
+DATASETS (16 total, 5 modalities)
+---------------------------------
+Ultrasound:     BUSI, BUSBRA, BUSUC, BUID, UDIAT, EUS (6)
+MRI:            BRISC, BTMRI (2)
+CT:             Covid19 (1)
+Endoscopy:      CVC300, ClinicDB, ColonDB, Kvasir, BKAI (5)
+Dermoscopy:     ISIC, UWaterlooSkinCancer (2)
+
+FILES PREPARED
+--------------
+Documentation:
+  ✓ README.md              - Main documentation with architecture details
+  ✓ QUICKSTART.md          - Quick start guide for users
+  ✓ UPLOAD_GUIDE.md        - GitHub upload instructions
+  ✓ LICENSE                - MIT License
+  ✓ .gitignore             - Git ignore rules
+
+Code:
+  ✓ model_unified.py       - Main UniMedSeg architecture (27 KB)
+  ✓ train.py               - Training script for 16 datasets
+  ✓ train_unified.py       - Shared training utilities
+  ✓ unified_dataloader.py  - Multi-modal dataloader
+  ✓ config_unified.yaml    - Model configuration
+
+Dependencies:
+  ✓ requirements.txt       - Python packages (torch, monai, etc.)
+  ✓ trainers/              - PVL adapters from MedCLIPSeg
+  ✓ open_clip_lib/         - CLIP model library
+  ✓ datasets/              - Dataset utilities
+  ✓ utils/                 - Helper functions
+
+Assets:
+  ✓ assets/overview.png    - Main figure (2.7 MB, from Fig1.png)
+
+Scripts:
+  ✓ setup_github.sh        - Automated GitHub setup script
+
+UPLOAD STEPS
+------------
+1. cd /root/shared-nvme/code/OneModel_Upload
+2. Run: ./setup_github.sh (or manually initialize git)
+3. Create repository on GitHub: https://github.com/new
+   - Name: UniMedSeg
+   - Do NOT initialize with README/License
+4. git remote add origin https://github.com/YOUR_USERNAME/UniMedSeg.git
+5. git push -u origin main
+6. Update YOUR_USERNAME in README.md
+7. Add topics: medical-imaging, deep-learning, clip, pytorch, etc.
+
+RECOMMENDED TOPICS
+------------------
+medical-imaging, deep-learning, semantic-segmentation, 
+vision-language-model, clip, multi-modal, pytorch, medical-ai,
+uncertainty-quantification
+
+CONTACT INFORMATION
+-------------------
+Corresponding: Jia Gu (jiagu@cityu.edu.mo)
+First Author:  Jingling Zhang (D240921002700@cityu.edu.mo)
+
+NEXT STEPS AFTER UPLOAD
+------------------------
+1. Train models and upload checkpoints to HuggingFace
+2. Update README with experimental results (DSC scores)
+3. Add repository link to paper manuscript
+4. Consider creating demo (Gradio/Streamlit)
+5. Add more visualization examples
+
+NOTES
+-----
+- Model weights auto-download from HuggingFace on first run
+- Datasets need separate download (follow MedCLIPSeg guide)
+- All code is MIT licensed
+- Built on MedCLIPSeg framework (citation required)
+
+================================================================================
+                        Project Ready for Upload!
+================================================================================
